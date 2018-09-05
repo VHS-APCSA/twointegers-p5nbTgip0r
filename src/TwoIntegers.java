@@ -16,11 +16,14 @@ public class TwoIntegers {
 
         int sum = number1 + number2;
         String sumFormatted = String.format(format, "+", sum);
+        
         int product = number1 * number2;
         String productFormatted = String.format(format, "*", product);
+        
         int diff = number1 - number2;
         String diffFormatted = String.format(format, "-", diff);
-        int quotient = number1 / number2;
+        
+        double quotient = (double) number1 / number2;
         String quotientFormatted = String.format(format, "/", quotient);
         return sumFormatted + ", " + productFormatted + ", " + diffFormatted + ", " + quotientFormatted;
     }
